@@ -41,4 +41,44 @@ $ npm run grunt -- -v
 $ npm run grunt -v
 ```
 
+Sass is a required Ruby dependency; install like so:
+
+```
+# First, make sure XCODE is installed (download from App Store) …
+# … and then run:
+$ xcode-select --install
+
+# Install rvm:
+$ \curl -L https://get.rvm.io | bash -s stable --ignore-dotfiles --ruby
+
+# Add to your user’s profile:
+
+# export PATH=${PATH}:$HOME/.rvm/bin
+# if [[ -s $HOME/.rvm/scripts/rvm ]]; then
+#   source $HOME/.rvm/scripts/rvm;
+# fi
+
+# Reload your profile or restart your computer.
+
+# Install Sass:
+$ gem install sass
+
+# Run these every so often:
+
+# Update rvm:
+$ rvm get stable
+
+# Update rvm Ruby:
+$ rvm install ruby --latest && rvm use current
+
+# Upgrade RubyGems:
+$ gem update --system
+
+# Update rvm gems:
+$ gem update
+
+# More info here:
+# https://github.com/mhulse/mhulse.github.io/wiki/Ruby-tips
+```
+
 Code released under the MIT License.

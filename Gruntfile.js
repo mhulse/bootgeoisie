@@ -50,29 +50,6 @@ module.exports = function (grunt) {
 			'bootstrap.css',
 		],
 		
-		/*----------------------------------( SASS )----------------------------------*/
-		
-		/**
-		 * Compile Sass to CSS.
-		 *
-		 * @see https://github.com/gruntjs/grunt-contrib-sass
-		 * @see http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style
-		 */
-		
-		sass: {
-			options: {
-				precision: 14, // How many digits of precision to use when outputting decimal numbers.
-			},
-			build: {
-				options: {
-					style: 'expanded', // Output style: nested, compact, compressed, expanded.
-				},
-				files: {
-					'bootstrap.css': 'bootgeoisie.scss',
-				},
-			},
-		},
-		
 		// concat: {
 		// 	options: {
 		// 		banner: '<%= banner %>',
@@ -107,6 +84,28 @@ module.exports = function (grunt) {
 		// 	}
 		// }
 		
+		/*----------------------------------( SASS )----------------------------------*/
+		
+		/**
+		 * Compile Sass to CSS.
+		 *
+		 * @see https://github.com/gruntjs/grunt-contrib-sass
+		 * @see http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#output_style
+		 */
+		
+		sass: {
+			options: {
+				precision: 14, // How many digits of precision to use when outputting decimal numbers.
+				style: 'expanded', // Output style: nested, compact, compressed, expanded.
+			},
+			dist: {
+				options: {},
+				files: {
+					'bootstrap.css': 'bootgeoisie.scss',
+				},
+			},
+		},
+		
 	});
 	
 	/*----------------------------------( TASKS )----------------------------------*/
@@ -119,7 +118,21 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	
+	grunt.registerTask('styles', 'Build the theme’s styles.', function(compress) {
+		
+		compress = ((compress === undefined) ? 'expanded' : 'compressed'); // `npm run grunt styles:true`
+		
+		grunt.log.writeln(compress);
+		
+		/*
+		grunt.config('sass.dist.options.compress', false);
+		grunt.config('sass.dist.options.style', 'expanded');
+		grunt.config('sass.dist.options.unix-newlines', true);
+		*/
+		
+	});
+	
 	grunt.registerTask('init', ['jshint',]);
-	grunt.registerTask('default', ['init', 'sass',]);
+	grunt.registerTask('default', ['init',]);
 	
 };
