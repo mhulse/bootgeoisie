@@ -18,19 +18,15 @@ $ npm update
 # Update Bower packages:
 $ npm run bower install
 
-# Modify variables.less and bootswatch.less in one of the theme directories,
-# or create your own in /custom.
-
-# Type grunt swatch:[theme] to build the CSS for a theme:
-$ npm run grunt swatch:amelia
-# … for Amelia. Or type:
-$ npm run grunt swatch
-# … to build them all at once.
+# Modify _variables.scss and _bootgeoisie.scss in the /theme directory …
+# … then build the theme:
+$ npm run grunt build
 
 # You can run:
 $ grunt
-# … to start a server, watch for any changes to the LESS files,
+# … to start a server, watch for any changes to the scss files,
 # and automatically build a theme and reload it on change.
+
 # Run:
 $ npm run grunt server
 # … for just the server, and:

@@ -1,19 +1,20 @@
 {
-  "name": "twbs-kickstart",
+  "name": "bootgeoisie",
   "homepage": "https://github.com/mhulse/bootgeoisie",
   "devDependencies": {
-    "bower": "~1",
     "grunt": "~0",
     "grunt-cli": "~1",
     "grunt-autoprefixer": "~3",
     "grunt-contrib-clean": "~1",
     "grunt-contrib-concat": "~1",
     "grunt-contrib-connect": "~1",
+    "grunt-contrib-jshint": "~0",
     "grunt-contrib-sass": "~0",
-    "grunt-contrib-watch": "~1"
+    "grunt-contrib-watch": "~1",
+    "bower": "~1"
   },
   "scripts": {
-    "bower": "bower",
-    "grunt": "grunt"
+    "grunt": "grunt",
+    "bower": "bower"
   }
 }
