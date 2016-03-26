@@ -15,16 +15,17 @@ $ npm install mhulse/bootgeoisie --save-dev
 
 ```bash
 # First:
-$ cd bootgeoisie/
+$ cd bootgeoisie/source/
 
 # Next, install:
 $ npm install
 # ... or update Gulp dependencies:
 $ npm update
 
-# Fire up `watch` and `server` tasks:
+# Copy files and fire up a server:
 $ npm run gulp
-# … and then modify `.scss` and `index.html` …
+
+# Next, you can modify/create any `.scss` files, and edit the `index.html` file.
 
 # Access Gulp flags/options via npm:
 $ npm run gulp -- --version
