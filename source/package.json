@@ -1,6 +1,4 @@
 {
-  "name": "bootgeoisie",
-  "homepage": "https://github.com/mhulse/bootgeoisie",
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
     "del": "^2.2.0",

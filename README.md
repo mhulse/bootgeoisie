@@ -4,76 +4,48 @@
 
 Bootstrap theme kick starter.
 
-## Install
+## Installation instructions
+
+Create a new repository on your desired host (like [GitHub](https://github.com/new)). Note that the repository name you pick (e.g., “my-new-project”) will be used in the following steps.
+
+On a unix system, run Bootgeoisie’s installation script:
+
+```bash
+bash <(curl -sL https://git.io/vVvpD)
+```
+Use “my-new-project” as the name of the installation directory.
+
+Once installation is complete:
+
+```bash
+$ cd my-new-project/
+```
+
+Edit these files (e.g., verbiage, project name, etc.) to match your new project:
+
+1. [index.html](index.html)
+1. [package.json](package.json)
+
+Initialize an empty Git repository within your installation directory and push your files:
+
+```bash
+echo '# Project Name' >> README.md
+git init
+git add --all
+git commit -m 'Hello world!'
+git remote add origin git@github.com:username/my-new-project.git
+git push -u origin master
+```
+
+Now that your’re all setup, follow the [development instructions](source/README.md) found in the [`source` directory](source).
+
+Finally, utilize your new project in another project via [npm](https://www.npmjs.com/):
 
 ```bash
 # Get the latest from GitHub:
 $ npm install mhulse/bootgeoisie --save-dev
 ```
 
-## Development
-
-```bash
-# First:
-$ cd bootgeoisie/source/
-
-# Next, install:
-$ npm install
-# ... or update Gulp dependencies:
-$ npm update
-
-# Copy files and fire up a server:
-$ npm run gulp
-
-# Next, you can modify/create any `.scss` files, and edit the `index.html` file.
-
-# Access Gulp flags/options via npm:
-$ npm run gulp -- --version
-# ... or (verbose mode):
-$ npm run gulp -- -v
-# Comparatively, this will return the npm version:
-$ npm run gulp -v
-```
-
-Ruby/Sass info:
-
-```bash
-# First, make sure XCODE is installed (download from App Store) …
-# … and then run:
-$ xcode-select --install
-
-# Install rvm:
-$ \curl -L https://get.rvm.io | bash -s stable --ignore-dotfiles --ruby
-
-# Add to your user’s profile:
-
-# export PATH=${PATH}:$HOME/.rvm/bin
-# if [[ -s $HOME/.rvm/scripts/rvm ]]; then
-#   source $HOME/.rvm/scripts/rvm;
-# fi
-
-# Reload your profile or restart your computer.
-
-# Install Sass:
-$ gem install sass
-
-# Run these every so often:
-
-# Update rvm:
-$ rvm get stable
-
-# Update rvm Ruby:
-$ rvm install ruby --latest && rvm use current
-
-# Upgrade RubyGems:
-$ gem update --system
-
-# Update rvm gems:
-$ gem update
-
-# More info here:
-# https://github.com/mhulse/mhulse.github.io/wiki/Ruby-tips
-```
 ---
 
 Copyright © 2016 [Michael Hulse](http://mky.io).
