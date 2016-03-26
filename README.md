@@ -10,36 +10,22 @@ $ cd bootgeoisie/
 
 # Next, install:
 $ npm install
-# ... or update Grunt dependencies:
+# ... or update Gulp dependencies:
 $ npm update
 
-# Update Bower packages:
-$ npm run bower install
+# Fire up `watch` and `server` tasks:
+$ npm run gulp
+# … and then modify `.scss` and `index.html` …
 
-# Modify _variables.scss and _bootgeoisie.scss in the /theme directory …
-# … then build the theme:
-$ npm run grunt build
-
-# You can run:
-$ grunt
-# … to start a server, watch for any changes to the scss files,
-# and automatically build a theme and reload it on change.
-
-# Run:
-$ npm run grunt server
-# … for just the server, and:
-$ npm run grunt watch
-# … for just the watcher.
-
-# Access Grunt flags/options via npm:
-$ npm run grunt -- --version
+# Access Gulp flags/options via npm:
+$ npm run gulp -- --version
 # ... or (verbose mode):
-$ npm run grunt -- -v
+$ npm run gulp -- -v
 # Comparatively, this will return the npm version:
-$ npm run grunt -v
+$ npm run gulp -v
 ```
 
-Sass is a required Ruby dependency; install like so:
+Ruby/Sass info:
 
 ```bash
 # First, make sure XCODE is installed (download from App Store) …
