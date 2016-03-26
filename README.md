@@ -4,8 +4,6 @@
 
 Bootstrap theme kick starter.
 
-Based on [Bootswatch](https://github.com/thomaspark/bootswatch).
-
 ```bash
 # First:
 $ cd bootgeoisie/
@@ -43,7 +41,7 @@ $ npm run grunt -v
 
 Sass is a required Ruby dependency; install like so:
 
-```
+```bash
 # First, make sure XCODE is installed (download from App Store) …
 # … and then run:
 $ xcode-select --install

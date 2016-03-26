@@ -2,19 +2,19 @@
   "name": "bootgeoisie",
   "homepage": "https://github.com/mhulse/bootgeoisie",
   "devDependencies": {
-    "grunt": "~0",
-    "grunt-cli": "~1",
-    "grunt-autoprefixer": "~3",
-    "grunt-contrib-clean": "~1",
-    "grunt-contrib-concat": "~1",
-    "grunt-contrib-connect": "~1",
-    "grunt-contrib-jshint": "~0",
-    "grunt-contrib-sass": "~0",
-    "grunt-contrib-watch": "~1",
-    "bower": "~1"
+    "bootstrap-sass": "^3.3.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cli": "^1.2.1",
+    "gulp-connect": "^3.2.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
   },
   "scripts": {
-    "grunt": "grunt",
-    "bower": "bower"
+    "gulp": "gulp"
   }
 }
