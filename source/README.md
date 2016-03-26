@@ -1,5 +1,3 @@
-## Development notes
-
 ```bash
 # Install:
 $ npm install
