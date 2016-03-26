@@ -124,5 +124,6 @@ gulp.task('files', [
 });
 
 gulp.task('default', [
+	'files',
 	'watch',
 ]);
