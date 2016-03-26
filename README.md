@@ -4,7 +4,7 @@
 
 Bootstrap theme kick starter.
 
-## Installation instructions
+## Installation and usage instructions
 
 Create a new repository on your desired host (like [GitHub](https://github.com/new)). Note that the repository name you pick (e.g., “my-new-project”) will be used in the following steps.
 
