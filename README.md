@@ -29,7 +29,7 @@ Edit these files (e.g., verbiage, project name, etc.) to match your new project:
 Initialize an empty Git repository within your installation directory and push your files:
 
 ```bash
-echo '# Project Name' >> README.md
+echo '# My New Project' >> README.md
 git init
 git add --all
 git commit -m 'Hello world!'
@@ -43,7 +43,9 @@ Finally, utilize your new project in another project via [npm](https://www.npmjs
 
 ```bash
 # Get the latest from GitHub:
-$ npm install mhulse/bootgeoisie --save-dev
+$ npm install username/my-new-project --save-dev
+# … or from Bitbucket:
+$ npm install git+ssh://git@bitbucket.org/username/my-new-project.git
 ```
 
 ---
