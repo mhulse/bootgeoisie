@@ -8,7 +8,7 @@ Bootstrap theme kick starter.
 
 Create a new repository on your desired host (like [GitHub](https://github.com/new)). Note that the repository name you pick (e.g., “my-new-project”) will be used in the following steps.
 
-On a unix system, run Bootgeoisie’s installation script:
+On a unix system, `cd` to your development folder and run Bootgeoisie’s installation script:
 
 ```bash
 $ bash <(curl -sL https://git.io/vVvpD)
@@ -25,11 +25,11 @@ Edit these files (e.g., verbiage, project name, etc.) to match your new project:
 
 1. [index.html](index.html)
 1. [package.json](package.json)
+1. [README.md](README.md)
 
 Initialize an empty Git repository within your installation directory and push your files:
 
 ```bash
-$ echo '# My New Project' >> README.md
 $ git init
 $ git add --all
 $ git commit -m 'Hello world!'
@@ -47,6 +47,8 @@ $ npm install username/my-new-project --save-dev
 # … or from Bitbucket:
 $ npm install git+ssh://git@bitbucket.org/username/my-new-project.git
 ```
+
+… Voilà!
 
 ---
 
