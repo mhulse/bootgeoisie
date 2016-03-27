@@ -14,7 +14,7 @@ function install() {
 	SOURCE_ZIP="https://github.com/mhulse/bootgeoisie/tarball/master"
 	
 	# Get the zip file and extract all files:
-	curl -sS -#L "$SOURCE_ZIP" | tar -xzv --strip-components 1 --exclude={install.sh,README.md}
+	curl -sS -#L "$SOURCE_ZIP" | tar -xzv --strip-components 1 --exclude={install.sh}
 	
 	# Let the use know that we are done:
 	echo $'\n'"Congrats! Installation was successful!"$'\n'
