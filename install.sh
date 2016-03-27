@@ -16,7 +16,7 @@ function install() {
 	# Get the zip file and extract all files:
 	curl -sS -#L "$SOURCE_ZIP" | tar -xzv --strip-components 1 --exclude={install.sh}
 	
-	echo "# $1"$'\n' > README.md
+	echo "# My new project"$'\n' > README.md
 	
 	# Let the use know that we are done:
 	echo $'\n'"Congrats! Installation was successful!"$'\n'
@@ -44,7 +44,7 @@ function empty() {
 function menu() {
 	
 	# Prompt the user for feedback:
-	read -p "Path or name of empty installation directory (Q to quit): " input
+	read -p "Path to empty installation directory (Q to quit): " input
 	
 	# Check the user’s input:
 	case $input in
@@ -58,7 +58,7 @@ function menu() {
 			;;
 		*)
 			# Contains only blanks, is empty or unset:
-			echo $'\n'"You must enter a directory name."
+			echo $'\n'"You must enter a directory path."
 			echo "Please try running this script again."
 	esac
 }
