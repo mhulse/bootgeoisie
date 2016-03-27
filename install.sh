@@ -16,6 +16,8 @@ function install() {
 	# Get the zip file and extract all files:
 	curl -sS -#L "$SOURCE_ZIP" | tar -xzv --strip-components 1 --exclude={install.sh}
 	
+	echo "# $1"$'\n' >> README.md
+	
 	# Let the use know that we are done:
 	echo $'\n'"Congrats! Installation was successful!"$'\n'
 	
