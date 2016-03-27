@@ -11,7 +11,7 @@ Create a new repository on your desired host (like [GitHub](https://github.com/n
 On a unix system, run Bootgeoisie’s installation script:
 
 ```bash
-bash <(curl -sL https://git.io/vVvpD)
+$ bash <(curl -sL https://git.io/vVvpD)
 ```
 Use “my-new-project” as the name of the installation directory.
 
@@ -29,12 +29,12 @@ Edit these files (e.g., verbiage, project name, etc.) to match your new project:
 Initialize an empty Git repository within your installation directory and push your files:
 
 ```bash
-echo '# My New Project' >> README.md
-git init
-git add --all
-git commit -m 'Hello world!'
-git remote add origin git@github.com:username/my-new-project.git
-git push -u origin master
+$ echo '# My New Project' >> README.md
+$ git init
+$ git add --all
+$ git commit -m 'Hello world!'
+$ git remote add origin git@github.com:username/my-new-project.git
+$ git push -u origin master
 ```
 
 Now that your’re all setup, follow the [development instructions](source/README.md) found in the [`source` directory](source).
