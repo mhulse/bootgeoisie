@@ -1,0 +1,15 @@
+{
+  "name": "bootgeoisie",
+  "version": "0.1.0",
+  "main": [
+    "bootstrap.css",
+    "bootstrap.js"
+  ],
+  "ignore": [
+    "source",
+    "index.html",
+    "**/.*",
+    "**/*.md",
+    "**/*.json"
+  ]
+}

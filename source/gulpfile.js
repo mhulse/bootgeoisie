@@ -51,8 +51,8 @@ gulp.task('styles', function() {
 		.pipe(maps.init())
 		.pipe(sass(options.sass)
 		.on('error', sass.logError))
-		.pipe(maps.write())
 		.pipe(prefix(options.prefix))
+		.pipe(maps.write())
 		.pipe(rename('bootstrap.css'))
 		.pipe(gulp.dest(root))
 		.pipe(connect.reload());
@@ -70,6 +70,14 @@ gulp.task('scripts', function() {
 	
 });
 
+gulp.task('html', function() {
+	
+	return gulp
+		.src(root + '**/*.html')
+		.pipe(connect.reload());
+	
+});
+
 gulp.task('watch', [
 	'scripts',
 	'styles',
@@ -84,6 +92,11 @@ gulp.task('watch', [
 	gulp
 		.watch('**/*.scss', [
 			'styles',
+		]);
+	
+	gulp
+		.watch(root + '**/*.html', [
+			'html',
 		]);
 	
 	return gulp;

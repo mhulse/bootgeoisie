@@ -48,6 +48,13 @@ $ npm install username/my-new-project --save-dev
 $ npm install git+ssh://git@bitbucket.org/username/my-new-project.git
 ```
 
+… or [Bower](http://bower.io/):
+
+```bash
+# Install from bitbucket using SSH (must have ssh keys setup):
+$ bower install git@bitbucket.org:username/my-new-project.git
+```
+
 … Voilà!
 
 ---
